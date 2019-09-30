@@ -1,13 +1,10 @@
 import React from "react"
+import footerStyles from "./Footer.module.css"
 
-const Footer = props => (
-  <footer className="bg-primary text-white">
+const Footer = () => (
+  <footer className={footerStyles.footer}>
     <div className="container">
-      <span className="text-muted">{props.footerText}</span>
-      <ul>
-        <li>{props.linkOne}</li>
-        <li>{props.linkTwo}</li>
-      </ul>
+      <span className="text-muted"> &copy; Gatsby-Bootstrap Project 2019 </span>
     </div>
   </footer>
 )
